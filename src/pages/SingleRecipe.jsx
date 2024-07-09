@@ -20,7 +20,7 @@ const SingleRecipe = () => {
         <div className="col-md-8 d-flex  flex-column ">
             <h2 className='d-flex justify-content-center mt-1' >{location.state.recipe.label}</h2>
             <h5 className='d-flex justify-content-center mt-3' >Meal Type:{location.state.recipe.mealType}</h5>
-            <div className='d-flex justify-content-center mt-3'>  <Link  to={location.state.recipe.url} className='btn btn-secondary  '> How to make</Link>
+            <div className='d-flex justify-content-center mt-3'>  <Link  to={location.state.recipe.url} className='btn btn-primary  '> How to make</Link>
             </div>
             <div className="row d-flex align-item-center justify-content-center gap-2 mt-3  ">
                 
