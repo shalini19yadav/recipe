@@ -44,7 +44,7 @@ const SingleRecipe = () => {
         <div className="col-md-6 d-flex align-items-center flex-column ">
           
           <ul>
-          <h2>Health Labels:</h2>
+          <h2>Health Labels::</h2>
             {location.state.recipe.healthLabels.map((ele)=>{
               return <li>{ele}</li>
             })}
