@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div>
         {/* <Navbar/> */}
-      About page
+      Here you can visit about page
     </div>
   )
 }
