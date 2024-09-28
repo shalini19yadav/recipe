@@ -36,7 +36,7 @@ const handleSearch=(e)=>{
 }
 
   return (
-    <div className='row d-flex justify-content-center  gap-3'>
+    <div className='row d-flex justify-content-center m-0 p-0 gap-3'>
       
 
       <div className='d-flex gap-2 justify-content-center mt-3'>
