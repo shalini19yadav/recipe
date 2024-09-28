@@ -6,7 +6,7 @@ const Home = () => {
 
   let inpRef =useRef()
 
-  const [searchValue, setsearchValue] = useState("pizza");
+  const [searchValue, setsearchValue] = useState("biryani");
 
   const [food, setfood] = useState([]);
   console.log(food)
@@ -36,12 +36,12 @@ const handleSearch=(e)=>{
 }
 
   return (
-    <div className='row d-flex justify-content-center gap-3'>
+    <div className='row d-flex justify-content-center  gap-3'>
       
 
       <div className='d-flex gap-2 justify-content-center mt-3'>
         <input ref={inpRef} className='rounded borrder-none' type="text" name="" id="" placeholder='Search' />
-        <button onClick={handleSearch} className='btn btn-success'>Search</button>
+        <button onClick={handleSearch} className='btn btn-success' style={{background:"crimson"}}>Search</button>
       </div>
 
       {food.map((obj)=>{
@@ -49,7 +49,7 @@ const handleSearch=(e)=>{
   <img src={obj.recipe.image}className="card-img-top" alt="..." />
   <div className="card-body">
     <h5 className="card-title">{obj.recipe.label}</h5>
-    <Link state={obj} to="/single" className="btn btn-success ">View Recipe</Link>
+    <Link state={obj} to="/single" className="btn btn-success " style={{background:"crimson"}}>View Recipe</Link>
     {/* <button onClick={()=>handleClick(obj)}> click me</button> */}
   </div>
 </div>

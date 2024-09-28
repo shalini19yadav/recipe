@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       
     <BrowserRouter>
-    <Navbar/>
+    <div style={{marginBottom:'70px'}}><Navbar/></div>
     
       <Routes>
         

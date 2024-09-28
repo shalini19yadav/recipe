@@ -20,19 +20,19 @@ const SingleRecipe = () => {
         <div className="col-md-8 d-flex  flex-column ">
             <h2 className='d-flex justify-content-center mt-1' >{location.state.recipe.label}</h2>
             <h5 className='d-flex justify-content-center mt-3' >Meal Type:{location.state.recipe.mealType}</h5>
-            <div className='d-flex justify-content-center mt-3'>  <Link  to={location.state.recipe.url} className='btn btn-primary  '> How to make</Link>
+            <div className='d-flex justify-content-center mt-3'>  <Link  to={location.state.recipe.url} className='btn 'style={{background:"gray"}}> How to make</Link>
             </div>
-            <div className="row d-flex align-item-center justify-content-center gap-2 mt-3  ">
+            <div className="row d-flex align-item-center justify-content-center gap-2 mt-3 totalNutrients ">
                 
-                <div className="col-md-3 bg-warning d-flex flex-column align-items-center  ">
+                <div className="col-md-3  d-flex flex-column align-items-center rounded  " style={{background:"crimson"}}>
                   <p>{location.state.recipe.totalNutrients.FAT.label}</p>
                   <p>{Math.ceil(location.state.recipe.totalNutrients.FAT.quantity)} mg</p>
                 </div>
-                <div className="col-md-3 bg-warning d-flex flex-column align-items-center  ">
+                <div className="col-md-3  d-flex flex-column align-items-center rounded " style={{background:"crimson"}}>
                   <p>{location.state.recipe.totalNutrients.SUGAR.label}</p>
                   <p>{Math.ceil(location.state.recipe.totalNutrients.SUGAR.quantity)} mg</p>
                 </div>
-                <div className="col-md-3 bg-warning d-flex flex-column align-items-center  ">
+                <div className="col-md-3  d-flex flex-column align-items-center rounded " style={{background:"crimson"}}>
                   <p>{location.state.recipe.totalNutrients.PROCNT.label}</p>
                   <p>{Math.ceil(location.state.recipe.totalNutrients.PROCNT.quantity)} mg</p>
                 </div>

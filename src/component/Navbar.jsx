@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div>
 
- <nav className="navbar navbar-expand-lg bg-warning">
+ <nav className="navbar navbar-expand-lg bg-secondary">
   <div className="container-fluid">
     <Link className="navbar-brand d-flex gap-3" to="/">
     <IoFastFoodOutline  style={{fontSize:'30px'}}/>
